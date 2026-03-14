@@ -1,98 +1,95 @@
-# Google-Play-Store-Data-Analysis-using-Pandas
-This project analyzes a dataset of Google Play Store applications using Python and Pandas. The workflow includes data cleaning, handling missing values, feature transformation, and performing exploratory data analysis to discover insights about app ratings, reviews, installs, and genres.
-Dataset
+# Google Play Store Data Analysis using Pandas
 
-Dataset: Google Play Store Apps Dataset
+## Project Overview
 
-File used: google-play-store.csv
+This project analyzes a dataset of Google Play Store applications using **Python** and **Pandas**.
+The workflow includes **data cleaning, handling missing values, feature transformation, and exploratory data analysis (EDA)** to discover insights about app ratings, reviews, installs, and genres.
 
-Columns include:
+---
 
-App title
+## Dataset
 
-Genre
+**Dataset:** Google Play Store Apps Dataset
 
-Reviews
+**File used:**
+`google-play-store.csv`
 
-Ratings
+### Columns include:
 
-Score
+* App title
+* Genre
+* Reviews
+* Ratings
+* Score
+* Price
+* Release date
+* Minimum installs
+* Ratings per day
+* In-app purchase support
 
-Price
+---
 
-Release date
+## Technologies Used
 
-Minimum installs
+* Python
+* Pandas
+* Jupyter Notebook / VS Code
 
-Ratings per day
+---
 
-In-app purchase support
+## Data Processing Steps
 
-Technologies Used
+1. Loaded dataset using **Pandas**
+2. Converted `released` column from **string** to **datetime**
+3. Handled missing values using **median grouped by genre**
+4. Replaced missing categorical values in **genre**
+5. Created a cleaned DataFrame for further analysis
 
-Python
+---
 
-Pandas
+## Analysis Performed
 
-Jupyter Notebook / VS Code
+* Average ratings per genre
+* Median ratings per day by genre
+* Top apps by number of reviews
+* Paid apps performance analysis
+* Apps supporting ads and in-app purchases
+* Total installs by genre
+* Oldest and newest release dates
+* Correlation between **reviews and ratings**
+* Weighted average rating per genre
+* Top app per genre based on **score-to-rating ratio**
 
-Data Processing Steps
+---
 
-Loaded dataset using Pandas
+## Key Insights
 
-Converted released column from string to datetime
+* Some genres receive significantly higher **daily ratings**
+* Paid apps show different rating behavior than free apps
+* A noticeable correlation exists between **reviews and ratings**
+* Certain genres dominate in **total installs**
 
-Handled missing values using median grouped by genre
+---
 
-Replaced missing categorical values in genre
-
-Created cleaned DataFrame for analysis
-
-Analysis Performed
-
-Average ratings per genre
-
-Median ratings per day by genre
-
-Top apps by number of reviews
-
-Paid apps performance analysis
-
-Apps supporting ads and in-app purchases
-
-Total installs by genre
-
-Oldest and newest release dates
-
-Correlation between reviews and ratings
-
-Weighted average rating per genre
-
-Top app per genre based on score-to-rating ratio
-
-Key Insights
-
-Some genres receive significantly higher daily ratings
-
-Paid apps show different rating behavior than free apps
-
-Strong correlation exists between reviews and ratings in some genres
-
-Certain genres dominate in total installs
-Installation
+## Installation
 
 To run this project locally:
 
+```bash
 pip install pandas
-How to Run
+```
 
-Download the dataset
+---
 
-Place google-play-store.csv in the project folder
+## How to Run
 
-Run the Python script or notebook
+1. Download the dataset
+2. Place `google-play-store.csv` in the project folder
+3. Run the Python script or notebook
 
-Author
+---
 
-Aya Abd El Nasser
+## Author
+
+**Aya Abd El Nasser**
 Data Engineering Track
